@@ -3,7 +3,7 @@
     "id": 1,
     "title": "CineHeist",
     "description": "ML model suggests movies based on the title or the plot entered by the user.",
-    "image": "public/images/CineHeist.jpg",
+    "image": "/images/CineHeist.jpg",
     "liveLink": "https://cineheistbysk.streamlit.app",
     "projectLink": "https://github.com/shivkumars005/CineHeist"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "CropConnect AI",
     "description": "An application developed to help illiterate farmers to get real time market price alerts.",
-    "image": "public/images/cropconnect.jpg",
+    "image": "/images/cropconnect.jpg",
     "liveLink": "https://cropconnectai.onrender.com",
     "projectLink": "https://github.com/shivkumars005/CropConnectAI-APP"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "Weather Application",
     "description": "Application developed to give the real time weather updates to the user of the location entered.",
-    "image": "public/images/WeatherBySKS.jpg",
+    "image": "/images/WeatherBySKS.jpg",
     "liveLink": "https://weatherappbysks.netlify.app/",
     "projectLink": "https://github.com/shivkumars005/Weather"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "title": "SmartDischarge",
     "description": "Application to generate patient's discharge summaries using AI.",
-    "image": "public/images/SmartDischarge.jpg",
+    "image": "/images/SmartDischarge.jpg",
     "liveLink": "https://smartdischarge.onrender.com/",
     "projectLink": "https://github.com/shivkumars005/SmartDischarge"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "title": "IPL Win Predictor",
     "description": "ML model predicts the win percentages of IPL teams in a match using AI.",
-    "image": "public/images/IplWin.jpg",
+    "image": "/images/IplWin.jpg",
     "liveLink": "https://ipl-win-predictor-by-sk.streamlit.app/",
     "projectLink": "https://github.com/shivkumars005/IPL-Win-Predictor"
   }
