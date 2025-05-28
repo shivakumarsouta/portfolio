@@ -15,7 +15,7 @@ function Navbar() {
             <a href="#projects" className="navbar-link">Projects</a>
             <a href="#blog" className="navbar-link">Blog</a>
             <a href="#contact" className="navbar-link">Contact</a>
-            <a href="/ShivaKumarResume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="/public/ShivaKumarResume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">Resume</a>
             <button
               onClick={toggleTheme}
               className="theme-toggle"
