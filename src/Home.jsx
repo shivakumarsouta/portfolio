@@ -99,6 +99,10 @@ function Home() {
             >
                 <div className="container">
                     <h2 className="section-title">My Projects</h2>
+                    <p className="section-text">
+                        A collection of AI/ML and software development projects that
+showcase my technical skills and expertise.
+                    </p>
                     <div className="project-grid">
                         {projects.map((project) => (
                             <motion.div
