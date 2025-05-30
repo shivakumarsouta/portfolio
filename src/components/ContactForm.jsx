@@ -24,8 +24,8 @@ function ContactForm() {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          from_name: formData.name,
-          reply_to: formData.email,
+          user_name: formData.name,
+          user_email: formData.email,
           message: formData.message
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
