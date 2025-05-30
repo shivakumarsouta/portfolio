@@ -1,107 +1,98 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
-    user_name: '',
-    user_email: '',
-    message: '',
+    name: '',
+    email: '',
+    message: ''
   });
-
   const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      await emailjs.send(
+    setIsSubmitting(true);
+    setStatus('');
+
+    emailjs
+      .send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        formData,
+        {
+          from_name: formData.name,
+          reply_to: formData.email,
+          message: formData.message
+        },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      );
-      setStatus('Message sent successfully!');
-      setFormData({
-        user_name: '',
-        user_email: '',
-        message: '',
+      )
+      .then(
+        () => {
+          setStatus('success');
+          setFormData({ name: '', email: '', message: '' });
+        },
+        (error) => {
+          setStatus('error');
+          console.error('EmailJS error:', error.text);
+        }
+      )
+      .finally(() => {
+        setIsSubmitting(false);
       });
-    } catch (error) {
-      setStatus('Failed to send message. Please try again.');
-    }
   };
 
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      className="contact-section"
-      id="contact"
-    >
-      <div className="container">
-        <h2 className="section-title">Send a Message</h2>
-        <form onSubmit={handleSubmit} className="contact-form">
-          <div className="form-group">
-            <input
-              id="name"
-              type="text"
-              name="user_name"
-              value={formData.user_name}
-              onChange={(e) =>
-                setFormData({ ...formData, user_name: e.target.value })
-              }
-              className="form-input"
-              required
-              aria-required="true"
-              placeholder="Your Name"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              id="email"
-              type="email"
-              name="user_email"
-              value={formData.user_email}
-              onChange={(e) =>
-                setFormData({ ...formData, user_email: e.target.value })
-              }
-              className="form-input"
-              required
-              aria-required="true"
-              placeholder="Your Email"
-            />
-          </div>
-          <div className="form-group">
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={(e) =>
-                setFormData({ ...formData, message: e.target.value })
-              }
-              className="form-textarea"
-              rows="5"
-              required
-              aria-required="true"
-              placeholder="Your Message"
-            />
-          </div>
-          <button type="submit" className="form-button">
-            Send Message
-          </button>
-          {status && (
-            <p
-              className={`form-status ${
-                status.includes('successfully') ? 'success' : 'error'
-              }`}
-            >
-              {status}
-            </p>
-          )}
-        </form>
+    <form className="contact-form" onSubmit={handleSubmit}>
+      <div className="form-group">
+        <label htmlFor="name" className="form-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          className="form-input"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
       </div>
-    </motion.section>
+      <div className="form-group">
+        <label htmlFor="email" className="form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          className="form-input"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="message" className="form-label">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          className="form-textarea"
+          rows="5"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        ></textarea>
+      </div>
+      <button type="submit" className="form-button" disabled={isSubmitting}>
+        {isSubmitting ? 'Sending...' : 'Send Message'}
+      </button>
+      {status === 'success' && (
+        <p className="form-status success">Message sent successfully!</p>
+      )}
+      {status === 'error' && (
+        <p className="form-status error">Failed to send message. Please try again.</p>
+      )}
+    </form>
   );
 }
 
