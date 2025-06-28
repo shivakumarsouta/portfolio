@@ -38,5 +38,5 @@ npm start
 The app will start on http://localhost:3000
 
 ## Contact
-You can reach me via the contact form on the portfolio or directly at
+You can reach me via the contact form in the portfolio or directly at
 <a href="mailto:shivakumarsouta0@gmail.com" target="_blank" rel="noopener noreferrer">Mail me</a>
