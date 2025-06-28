@@ -38,5 +38,13 @@
     "image": "/images/IplWin.jpg",
     "liveLink": "https://ipl-win-predictor-by-sk.streamlit.app/",
     "projectLink": "https://github.com/shivkumars005/IPL-Win-Predictor"
+  },
+  {
+    "id": 6,
+    "title": "MediBot",
+    "description": "AI-powered RAG based chatbot for medical inquiries and assistance.",
+    "image": "/images/medibot_bg.jpg",
+    "liveLink": "https://medibot-by-sks.streamlit.app/",
+    "projectLink": "https://github.com/shivkumars005/MediChat-Streamlit"
   }
 ]
