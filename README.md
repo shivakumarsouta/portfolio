@@ -24,19 +24,9 @@ This is my personal portfolio website built with **React**, showcasing my skills
 
 ---
 
-## Getting Started
-
-To run this project locally:
-
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-npm install
-npm start
-```
-
-The app will start on http://localhost:3000
 
 ## Contact
-You can reach me via the contact form in the portfolio or directly at
-<a href="mailto:shivakumarsouta0@gmail.com" target="_blank" rel="noopener noreferrer">Mail me</a>
+You can reach me via the contact form in the portfolio or directly through : 
+ * [Mail](mailto:shivakumarsouta18@gmail.com)
+ * [LinkedIn](https://www.linkedin.com/in/shivakumarsouta)
+ * [GitHub](https://www.github.com/shivkumars005)
