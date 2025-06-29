@@ -100,8 +100,7 @@ function Home() {
                 <div className="container">
                     <h2 className="section-title">My Projects</h2>
                     <p className="section-text">
-                        A collection of AI/ML and software development projects that
-showcase my technical skills and expertise.
+                        A collection of AI/ML and software development projects that showcase my technical skills and expertise.
                     </p>
                     <div className="project-grid">
                         {projects.map((project) => (
@@ -182,6 +181,15 @@ showcase my technical skills and expertise.
                                 </a>
                                 <a href="https://www.facebook.com/share/163fycC6cD/" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-facebook fa-2x text-primary social-icon"></i>
+                                </a>
+                                <a href="https://www.instagram.com/sivudoo" target="_blank" rel="noopener noreferrer">
+                                    <i className='fab fa-instagram fa-2x text-primary social-icon'></i>
+                                </a>
+                                <a href="https://www.reddit.com/user/Sks6957" target="_blank" rel="noopener noreferrer">
+                                    <i className='fab fa-reddit fa-2x text-primary social-icon'></i>
+                                </a>
+                                <a href="https://t.me/shivakumarsouta" target="_blank" rel="noopener noreferrer">
+                                    <i className='fab fa-telegram fa-2x text-primary social-icon'></i>
                                 </a>
                             </div>
                         </div>
