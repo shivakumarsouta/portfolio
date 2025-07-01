@@ -41,10 +41,18 @@
   },
   {
     "id": 6,
-    "title": "MediBot",
-    "description": "AI-powered RAG based chatbot for medical inquiries and assistance.",
+    "title": "MediChat",
+    "description": "AI-powered RAG based chatbot for medical inquiries and assistance based on a book knowledge.",
     "image": "/images/medibot_bg.jpg",
     "liveLink": "https://medibot-by-sks.streamlit.app/",
     "projectLink": "https://github.com/shivkumars005/MediChat-Streamlit"
+  },
+  {
+    "id": 7,
+    "title": "MediVoiceBot",
+    "description": "AI-powered chatbot for medical inquiries and assistance developed using APIs of LLMs.",
+    "image": "/images/medivoicebot_bg.jpg",
+    "liveLink": "https://huggingface.co/spaces/shivakumars57/MediVoiceBot/",
+    "projectLink": "https://github.com/shivkumars005/Medivoicebot"
   }
 ]
