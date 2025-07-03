@@ -59,7 +59,7 @@
     "id": 8,
     "title": "Cold Mail Generator",
     "description": "Application developed to generate cold mails based on the job description / link provided",
-    "image": "/images/IplWin.jpg",
+    "image": "/images/cold_mail.jpg",
     "liveLink": "",
     "projectLink": "https://github.com/shivkumars005/ColdMailGenerator"
   }
