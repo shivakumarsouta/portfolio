@@ -4,7 +4,7 @@
     "title": "CineHeist",
     "description": "ML model suggests movies based on the title or the plot entered by the user.",
     "image": "/images/CineHeist.jpg",
-    "liveLink": "https://cineheistbysk.streamlit.app",
+    "liveLink": "https://cineheist.streamlit.app",
     "projectLink": "https://github.com/shivkumars005/CineHeist"
   },
   {
