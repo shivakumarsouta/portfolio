@@ -70,5 +70,13 @@
     "image": "/images/HousePrice.jpg",
     "liveLink": "https://houseprices-predictor.streamlit.app/",
     "projectLink": "https://github.com/shivkumars005/HousePricePrediction"
+  },
+  {
+    "id": 10,
+    "title": "Resume Generator",
+    "description": "An application to generate professional resumes based on the details provided by the user.",
+    "image": "/images/ResumeGenerator.jpg",
+    "liveLink": "https://resumegenerater.streamlit.app/",
+    "projectLink": "https://github.com/shivkumars005/ResumeGenerator"
   }
 ]
