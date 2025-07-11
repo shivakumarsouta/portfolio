@@ -62,5 +62,13 @@
     "image": "/images/cold_mail.jpg",
     "liveLink": "",
     "projectLink": "https://github.com/shivkumars005/ColdMailGenerator"
+  },
+  {
+    "id": 9,
+    "title": "House Price Prediction",
+    "description": "A machine learning model to predict house prices based on various features.",
+    "image": "/images/HousePrice.jpg",
+    "liveLink": "https://houseprices-predictor.streamlit.app/",
+    "projectLink": "https://github.com/shivkumars005/HousePricePrediction"
   }
 ]
