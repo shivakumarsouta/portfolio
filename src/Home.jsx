@@ -50,7 +50,7 @@ function Home() {
                 <div className="container">
                     <div className="about-content">
                         <motion.img
-                            src="/images/profile-placeholder.jpg"
+                            src="/images/profile.jpg"
                             alt="Profile"
                             className="about-image"
                             initial={{ scale: 0.8, opacity: 0 }}

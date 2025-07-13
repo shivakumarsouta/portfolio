@@ -258,7 +258,7 @@ body.dark .button-divider {
 .about-image {
   width: 40%;
   max-width: 250px;
-  border-radius: 50%;
+  border-radius: 30%;
   object-fit: cover;
 }
 
