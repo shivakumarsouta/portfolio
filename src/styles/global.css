@@ -353,6 +353,10 @@ body.dark .project-card {
 .project-description {
   color: #6b7280;
   margin-bottom: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.5;
+  height: auto;
+  max-height: 6.5rem;
 }
 
 body.dark .project-description {

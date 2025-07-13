@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "SmartDischarge",
-    "description": "Application to generate patient's discharge summaries using AI.",
+    "description": "Application developed to generate patient's discharge summaries using AI.",
     "image": "/images/SmartDischarge.jpg",
     "liveLink": "https://smartdischarge.onrender.com/",
     "projectLink": "https://github.com/shivkumars005/SmartDischarge"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "title": "MediChat",
-    "description": "AI-powered RAG based chatbot for medical inquiries and assistance based on a book knowledge.",
+    "description": "AI-powered RAG based chatbot for medical queries based on a book knowledge.",
     "image": "/images/medibot_bg.jpg",
     "liveLink": "https://medibot-by-sks.streamlit.app/",
     "projectLink": "https://github.com/shivkumars005/MediChat-Streamlit"

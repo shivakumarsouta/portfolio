@@ -33,7 +33,8 @@ function Home() {
         HTML: 'fab fa-html5',
         CSS: 'fab fa-css3-alt',
         Git: 'fab fa-git-alt',
-        Python: 'fab fa-python'
+        Python: 'fab fa-python',
+        React: 'fab fa-react'
     };
 
     return (
