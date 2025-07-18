@@ -5,7 +5,8 @@
     "description": "Application developed to generate patient's discharge summaries using AI.",
     "image": "/images/SmartDischarge.jpg",
     "liveLink": "https://smartdischarge.onrender.com/",
-    "projectLink": "https://github.com/shivkumars005/SmartDischarge"
+    "projectLink": "https://github.com/shivkumars005/SmartDischarge",
+    "techStack": ["HTML", "CSS", "JS", "LLMs"]
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "description": "An application developed to help illiterate farmers to get real time market price alerts.",
     "image": "/images/CropConnectAI.jpg",
     "liveLink": "https://cropconnectai.onrender.com",
-    "projectLink": "https://github.com/shivkumars005/CropConnectAI-APP"
+    "projectLink": "https://github.com/shivkumars005/CropConnectAI-APP",
+    "techStack": ["HTML", "CSS", "JS", "APIs"]
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "description": "ML model suggests movies based on the title or the plot entered by the user.",
     "image": "/images/CineHeist.jpg",
     "liveLink": "https://cineheist.streamlit.app",
-    "projectLink": "https://github.com/shivkumars005/CineHeist"
+    "projectLink": "https://github.com/shivkumars005/CineHeist",
+    "techStack": ["ML Algorithms", "Python"]
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "description": "Application developed to give the real time weather updates to the user of the location entered.",
     "image": "/images/WeatherAppReact.jpg",
     "liveLink": "https://weatherforecasting-app.vercel.app/",
-    "projectLink": "https://github.com/shivkumars005/WeatherAppReact"
+    "projectLink": "https://github.com/shivkumars005/WeatherAppReact",
+    "techStack": ["React", "APIs"]
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "description": "AI-powered RAG based chatbot for medical queries based on a book knowledge.",
     "image": "/images/medibot_bg.jpg",
     "liveLink": "https://medibot-by-sks.streamlit.app/",
-    "projectLink": "https://github.com/shivkumars005/MediChat-Streamlit"
+    "projectLink": "https://github.com/shivkumars005/MediChat-Streamlit",
+    "techStack": ["Langchain", "", "", "APIs"]
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "description": "AI-powered chatbot for medical inquiries and assistance developed using APIs of LLMs.",
     "image": "/images/medivoicebot_bg.jpg",
     "liveLink": "https://huggingface.co/spaces/shivakumars57/MediVoiceBot/",
-    "projectLink": "https://github.com/shivkumars005/Medivoicebot"
+    "projectLink": "https://github.com/shivkumars005/Medivoicebot",
+    "techStack": ["", "", "", "APIs"]
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "description": "Application developed to generate cold mails based on the job description / link provided",
     "image": "/images/cold_mail.jpg",
     "liveLink": "https://github.com/shivkumars005/ColdMailGenerator",
-    "projectLink": "https://github.com/shivkumars005/ColdMailGenerator"
+    "projectLink": "https://github.com/shivkumars005/ColdMailGenerator",
+    "techStack": ["Python", "", "", "APIs"]
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "description": "A machine learning model to predict house prices based on various features.",
     "image": "/images/HousePrice.jpg",
     "liveLink": "https://houseprices-predictor.streamlit.app/",
-    "projectLink": "https://github.com/shivkumars005/HousePricePrediction"
+    "projectLink": "https://github.com/shivkumars005/HousePricePrediction",
+    "techStack": ["ML Algorithms", "Python", "", ""]
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "description": "ML model predicts the win percentages of IPL teams in a match using AI.",
     "image": "/images/IplWin.jpg",
     "liveLink": "https://ipl-win-predictor-by-sk.streamlit.app/",
-    "projectLink": "https://github.com/shivkumars005/IPL-Win-Predictor"
+    "projectLink": "https://github.com/shivkumars005/IPL-Win-Predictor",
+    "techStack": ["ML Algorithms", "Python", "", ""]
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "description": "An application to generate professional resumes based on the details provided by the user.",
     "image": "/images/ResumeGenerator.jpg",
     "liveLink": "https://resumegenerater.streamlit.app/",
-    "projectLink": "https://github.com/shivkumars005/ResumeGenerator"
+    "projectLink": "https://github.com/shivkumars005/ResumeGenerator",
+    "techStack": ["Python", "", "", "APIs"]
   },
   {
     "id": 11,
@@ -85,6 +95,7 @@
     "description": "Application developed to give the real time weather updates to the user of the location entered.",
     "image": "/images/WeatherAppBasic.jpg",
     "liveLink": "https://weatherappbysks.netlify.app",
-    "projectLink": "https://github.com/shivkumars005/Weather"
+    "projectLink": "https://github.com/shivkumars005/Weather",
+    "techStack": ["HTML", "CSS", "JS", "APIs"]
   }
 ]
