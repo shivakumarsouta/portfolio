@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "title": "CineHeist",
-    "description": "ML model suggests movies based on the title or the plot entered by the user.",
-    "image": "/images/CineHeist.jpg",
-    "liveLink": "https://cineheist.streamlit.app",
-    "projectLink": "https://github.com/shivkumars005/CineHeist"
+    "title": "SmartDischarge",
+    "description": "Application developed to generate patient's discharge summaries using AI.",
+    "image": "/images/SmartDischarge.jpg",
+    "liveLink": "https://smartdischarge.onrender.com/",
+    "projectLink": "https://github.com/shivkumars005/SmartDischarge"
   },
   {
     "id": 2,
@@ -17,15 +17,15 @@
   },
   {
     "id": 3,
-    "title": "SmartDischarge",
-    "description": "Application developed to generate patient's discharge summaries using AI.",
-    "image": "/images/SmartDischarge.jpg",
-    "liveLink": "https://smartdischarge.onrender.com/",
-    "projectLink": "https://github.com/shivkumars005/SmartDischarge"
+    "title": "CineHeist",
+    "description": "ML model suggests movies based on the title or the plot entered by the user.",
+    "image": "/images/CineHeist.jpg",
+    "liveLink": "https://cineheist.streamlit.app",
+    "projectLink": "https://github.com/shivkumars005/CineHeist"
   },
   {
     "id": 4,
-    "title": "Weather Application(React)",
+    "title": "Weather App (React)",
     "description": "Application developed to give the real time weather updates to the user of the location entered.",
     "image": "/images/WeatherAppReact.jpg",
     "liveLink": "https://weatherforecasting-app.vercel.app/",
@@ -33,14 +33,6 @@
   },
   {
     "id": 5,
-    "title": "IPL Win Predictor",
-    "description": "ML model predicts the win percentages of IPL teams in a match using AI.",
-    "image": "/images/IplWin.jpg",
-    "liveLink": "https://ipl-win-predictor-by-sk.streamlit.app/",
-    "projectLink": "https://github.com/shivkumars005/IPL-Win-Predictor"
-  },
-  {
-    "id": 6,
     "title": "MediChat",
     "description": "AI-powered RAG based chatbot for medical queries based on a book knowledge.",
     "image": "/images/medibot_bg.jpg",
@@ -48,7 +40,7 @@
     "projectLink": "https://github.com/shivkumars005/MediChat-Streamlit"
   },
   {
-    "id": 7,
+    "id": 6,
     "title": "MediVoiceBot",
     "description": "AI-powered chatbot for medical inquiries and assistance developed using APIs of LLMs.",
     "image": "/images/medivoicebot_bg.jpg",
@@ -56,7 +48,7 @@
     "projectLink": "https://github.com/shivkumars005/Medivoicebot"
   },
   {
-    "id": 8,
+    "id": 7,
     "title": "Cold Mail Generator",
     "description": "Application developed to generate cold mails based on the job description / link provided",
     "image": "/images/cold_mail.jpg",
@@ -64,12 +56,20 @@
     "projectLink": "https://github.com/shivkumars005/ColdMailGenerator"
   },
   {
-    "id": 9,
+    "id": 8,
     "title": "House Price Prediction",
     "description": "A machine learning model to predict house prices based on various features.",
     "image": "/images/HousePrice.jpg",
     "liveLink": "https://houseprices-predictor.streamlit.app/",
     "projectLink": "https://github.com/shivkumars005/HousePricePrediction"
+  },
+  {
+    "id": 9,
+    "title": "IPL Win Predictor",
+    "description": "ML model predicts the win percentages of IPL teams in a match using AI.",
+    "image": "/images/IplWin.jpg",
+    "liveLink": "https://ipl-win-predictor-by-sk.streamlit.app/",
+    "projectLink": "https://github.com/shivkumars005/IPL-Win-Predictor"
   },
   {
     "id": 10,
@@ -81,7 +81,7 @@
   },
   {
     "id": 11,
-    "title": "Weather Application(Basic)",
+    "title": "Weather App (Basic)",
     "description": "Application developed to give the real time weather updates to the user of the location entered.",
     "image": "/images/WeatherAppBasic.jpg",
     "liveLink": "https://weatherappbysks.netlify.app",
