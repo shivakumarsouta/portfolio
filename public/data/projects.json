@@ -11,25 +11,25 @@
     "id": 2,
     "title": "CropConnect AI",
     "description": "An application developed to help illiterate farmers to get real time market price alerts.",
-    "image": "/images/cropconnect.jpg",
+    "image": "/images/CropConnectAI.jpg",
     "liveLink": "https://cropconnectai.onrender.com",
     "projectLink": "https://github.com/shivkumars005/CropConnectAI-APP"
   },
   {
     "id": 3,
-    "title": "Weather Application(React)",
-    "description": "Application developed to give the real time weather updates to the user of the location entered.",
-    "image": "/images/WeatherBySKS.jpg",
-    "liveLink": "https://weatherforecasting-app.vercel.app/",
-    "projectLink": "https://github.com/shivkumars005/WeatherAppReact"
-  },
-  {
-    "id": 4,
     "title": "SmartDischarge",
     "description": "Application developed to generate patient's discharge summaries using AI.",
     "image": "/images/SmartDischarge.jpg",
     "liveLink": "https://smartdischarge.onrender.com/",
     "projectLink": "https://github.com/shivkumars005/SmartDischarge"
+  },
+  {
+    "id": 4,
+    "title": "Weather Application(React)",
+    "description": "Application developed to give the real time weather updates to the user of the location entered.",
+    "image": "/images/WeatherAppReact.jpg",
+    "liveLink": "https://weatherforecasting-app.vercel.app/",
+    "projectLink": "https://github.com/shivkumars005/WeatherAppReact"
   },
   {
     "id": 5,
@@ -83,7 +83,7 @@
     "id": 11,
     "title": "Weather Application(Basic)",
     "description": "Application developed to give the real time weather updates to the user of the location entered.",
-    "image": "/images/WeatherBySKS.jpg",
+    "image": "/images/WeatherAppBasic.jpg",
     "liveLink": "https://weatherappbysks.netlify.app",
     "projectLink": "https://github.com/shivkumars005/Weather"
   }
