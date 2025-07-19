@@ -54,7 +54,7 @@
 
 .project-link {
   text-decoration: none;
-  color: #0070f3;
+  color: white;
   font-weight: 500;
   display: inline-flex;
   align-items: center;
@@ -66,7 +66,7 @@
 }
 
 .live-link {
-  color: #28a745;
+  color: white;
 }
 
 .icon {
