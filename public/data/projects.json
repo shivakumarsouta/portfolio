@@ -6,7 +6,7 @@
     "image": "/images/SmartDischarge.jpg",
     "liveLink": "https://smartdischarge.onrender.com/",
     "projectLink": "https://github.com/shivkumars005/SmartDischarge",
-    "techStack": ["HTML", "CSS", "JS", "LLMs"]
+    "techStack": ["HTML", "CSS", "JS", "Flask"]
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "image": "/images/CropConnectAI.jpg",
     "liveLink": "https://cropconnectai.onrender.com",
     "projectLink": "https://github.com/shivkumars005/CropConnectAI-APP",
-    "techStack": ["HTML", "CSS", "JS", "APIs"]
+    "techStack": ["HTML", "CSS", "JS", "Flask"]
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "image": "/images/CineHeist.jpg",
     "liveLink": "https://cineheist.streamlit.app",
     "projectLink": "https://github.com/shivkumars005/CineHeist",
-    "techStack": ["ML Algorithms", "Python"]
+    "techStack": ["Python", "Streamlit","Scikit-Learn"]
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "image": "/images/WeatherAppReact.jpg",
     "liveLink": "https://weatherforecasting-app.vercel.app/",
     "projectLink": "https://github.com/shivkumars005/WeatherAppReact",
-    "techStack": ["React", "APIs"]
+    "techStack": ["ReactJs"]
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "image": "/images/medibot_bg.jpg",
     "liveLink": "https://medibot-by-sks.streamlit.app/",
     "projectLink": "https://github.com/shivkumars005/MediChat-Streamlit",
-    "techStack": ["Langchain", "", "", "APIs"]
+    "techStack": ["Python", "Streamlit"]
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "image": "/images/medivoicebot_bg.jpg",
     "liveLink": "https://huggingface.co/spaces/shivakumars57/MediVoiceBot/",
     "projectLink": "https://github.com/shivkumars005/Medivoicebot",
-    "techStack": ["", "", "", "APIs"]
+    "techStack": ["python", "Gradio", "Groq"]
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "image": "/images/cold_mail.jpg",
     "liveLink": "https://github.com/shivkumars005/ColdMailGenerator",
     "projectLink": "https://github.com/shivkumars005/ColdMailGenerator",
-    "techStack": ["Python", "", "", "APIs"]
+    "techStack": ["Python", "Streamlit", "Groq"]
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "image": "/images/HousePrice.jpg",
     "liveLink": "https://houseprices-predictor.streamlit.app/",
     "projectLink": "https://github.com/shivkumars005/HousePricePrediction",
-    "techStack": ["ML Algorithms", "Python", "", ""]
+    "techStack": ["Python", "Scikit-Learn"]
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "image": "/images/IplWin.jpg",
     "liveLink": "https://ipl-win-predictor-by-sk.streamlit.app/",
     "projectLink": "https://github.com/shivkumars005/IPL-Win-Predictor",
-    "techStack": ["ML Algorithms", "Python", "", ""]
+    "techStack": ["Python", "Scikit-Learn"]
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "image": "/images/ResumeGenerator.jpg",
     "liveLink": "https://resumegenerater.streamlit.app/",
     "projectLink": "https://github.com/shivkumars005/ResumeGenerator",
-    "techStack": ["Python", "", "", "APIs"]
+    "techStack": ["Python", "Streamlit", "Groq"]
   },
   {
     "id": 11,
@@ -96,6 +96,6 @@
     "image": "/images/WeatherAppBasic.jpg",
     "liveLink": "https://weatherappbysks.netlify.app",
     "projectLink": "https://github.com/shivkumars005/Weather",
-    "techStack": ["HTML", "CSS", "JS", "APIs"]
+    "techStack": ["HTML", "CSS", "JS"]
   }
 ]
