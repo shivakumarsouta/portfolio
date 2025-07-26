@@ -29,4 +29,4 @@ This is my personal portfolio website built with **React**, showcasing my skills
 You can reach me via the contact form in the portfolio or directly through : 
  * [Mail](mailto:shivakumarsouta18@gmail.com)
  * [LinkedIn](https://www.linkedin.com/in/shivakumarsouta)
- * [GitHub](https://www.github.com/shivkumars005)
+ * [GitHub](https://www.github.com/shivakumarsouta)
