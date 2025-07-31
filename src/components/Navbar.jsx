@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 function Navbar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -21,7 +22,7 @@ function Navbar() {
               className="theme-toggle"
               aria-label="Toggle theme"
             >
-              {theme === 'light' ? 'Dark' : 'Light'} Mode
+              {theme === 'light' ? <FaMoon /> : <FaSun />} 
             </button>
           </div>
         </div>

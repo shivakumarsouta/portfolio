@@ -1,8 +1,10 @@
-[
+[ 
+  "Python",
+  "C",
+  "Java",
+  "React",
   "HTML",
   "CSS",
   "JavaScript",
-  "Python",
-  "Git",
-  "React"
+  "Git"
 ]

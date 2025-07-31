@@ -47,8 +47,10 @@ function ContactForm() {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
+      <h2 className="form-heading">Send Message 💬</h2>
+
       <div className="form-group">
-        <label htmlFor="name" className="form-label">Name</label>
+        <label htmlFor="name" className="form-label">Name:</label>
         <input
           type="text"
           id="name"
@@ -59,8 +61,9 @@ function ContactForm() {
           required
         />
       </div>
+
       <div className="form-group">
-        <label htmlFor="email" className="form-label">Email</label>
+        <label htmlFor="email" className="form-label">Email:</label>
         <input
           type="email"
           id="email"
@@ -71,26 +74,29 @@ function ContactForm() {
           required
         />
       </div>
+
       <div className="form-group">
-        <label htmlFor="message" className="form-label">Message</label>
+        <label htmlFor="message" className="form-label">Message:</label>
         <textarea
           id="message"
           name="message"
           className="form-textarea"
-          rows="5"
+          rows="3"
           value={formData.message}
           onChange={handleChange}
           required
         ></textarea>
       </div>
+
       <button type="submit" className="form-button" disabled={isSubmitting}>
         {isSubmitting ? 'Sending...' : 'Send Message'}
       </button>
+
       {status === 'success' && (
-        <p className="form-status success">Message sent successfully!</p>
+        <p className="form-status success">✅ Message sent successfully!</p>
       )}
       {status === 'error' && (
-        <p className="form-status error">Failed to send message. Please try again.</p>
+        <p className="form-status error">❌ Failed to send message. Please try again.</p>
       )}
     </form>
   );

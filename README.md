@@ -18,7 +18,7 @@ This is my personal portfolio website built with **React**, showcasing my skills
 
 ## Tech Stack
 
-- **Frontend**: React, Tailwind CSS
+- **Frontend**: React
 - **Email**: EmailJS
 - **Hosting**: Vercel
 

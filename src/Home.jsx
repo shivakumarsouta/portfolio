@@ -29,12 +29,14 @@ function Home() {
     }, []);
 
     const skillIcons = {
-        JavaScript: 'fab fa-js-square',
-        HTML: 'fab fa-html5',
-        CSS: 'fab fa-css3-alt',
-        Git: 'fab fa-git-alt',
-        Python: 'fab fa-python',
-        React: 'fab fa-react'
+        C: 'devicon-c-plain colored',
+        Python: 'devicon-python-plain colored',
+        JavaScript: 'devicon-javascript-plain colored',
+        React: 'devicon-react-original colored',
+        HTML: 'devicon-html5-plain colored',
+        CSS: 'devicon-css3-plain colored',
+        Git: 'devicon-git-plain colored',
+        Java: 'devicon-java-plain colored',
     };
 
     return (
@@ -61,7 +63,9 @@ function Home() {
                         <div className="about-info">
                             <h2 className="section-title">About Me</h2>
                             <p className="section-text">
-                                A highly motivated B.Tech (AI & ML) student with expertise in Artificial Intelligence, Machine Learning, and Full-Stack Development. Proficient in Python, Data Science, Web Technologies, and Databases with hands-on experience in building AI-driven applications. A fast learner with strong problem-solving skills, seeking opportunities to contribute to innovative projects in the tech industry.
+                                I’m a B.Tech (AI & ML) student with strong expertise in Artificial Intelligence, Machine Learning, and Web Development.
+                                Proficient in Python, Data Science, and Web Technologies. I bring hands-on experience in building real-world, AI-driven solutions.
+                                I love contributing to cutting-edge innovation in the tech landscape.                            
                             </p>
                         </div>
                     </div>
@@ -126,7 +130,7 @@ function Home() {
                 id="blog"
             >
                 <div className="container">
-                    <h2 className="section-title">Blog</h2>
+                    <h2 className="section-title">My Blogs</h2>
                     <p className="section-text">
                         Visit my <a href="https://techtalesbyshivakumar.blogspot.com" target="_blank" rel="noopener noreferrer" className="section-link">Blogger site</a> for more posts!
                     </p>
