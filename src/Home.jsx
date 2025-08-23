@@ -54,7 +54,7 @@ function Home() {
                     <div className="about-content">
                         <motion.img
                             src="/images/profile.jpg"
-                            alt="Profile"
+                            alt="sk_photo"
                             className="about-image"
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
