@@ -58,6 +58,7 @@ function ContactForm() {
           className="form-input"
           value={formData.name}
           onChange={handleChange}
+          placeholder='Shiva Kumar..'
           required
         />
       </div>
@@ -71,6 +72,7 @@ function ContactForm() {
           className="form-input"
           value={formData.email}
           onChange={handleChange}
+          placeholder='john.doe@example.com'
           required
         />
       </div>
@@ -84,6 +86,7 @@ function ContactForm() {
           rows="3"
           value={formData.message}
           onChange={handleChange}
+          placeholder='Hi, I would like to talk about..'
           required
         ></textarea>
       </div>

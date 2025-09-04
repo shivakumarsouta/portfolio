@@ -2,7 +2,7 @@ function Hero() {
     return (
         <section className="hero">
             <div className="container">
-                <h1 className="hero-title">Hello, I'm Shiva Kumar Souta 👋</h1>
+                <h1 className="hero-title">Hi, I'm Shiva Kumar Souta 👋</h1>
                 <p className="hero-subtitle">
                     AI & ML Enthusiast | Front End Developer | B.Tech Student
                 </p>
