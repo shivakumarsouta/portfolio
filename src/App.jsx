@@ -7,9 +7,9 @@ import Hero from "./components/Hero";
 import ProjectCard from "./components/ProjectCard";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
-import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
-import { FaInstagram, FaFacebook, FaTelegram } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
+import { FaInstagram, FaFacebook, FaTelegram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function App() {
   const [projects, setProjects] = useState([]);
@@ -74,11 +74,11 @@ function App() {
                   <h2 className="section-title">About Me</h2>
                   <p className="section-text">
                     I’m a B.Tech (AI & ML) student with strong expertise in
-                    Artificial Intelligence, Machine Learning, and Web Development.
-                    Proficient in Python, Data Science, and Web Technologies. I
-                    bring hands-on experience in building real-world, AI-driven
-                    solutions. I love contributing to cutting-edge innovation in the
-                    tech landscape.
+                    Artificial Intelligence, Machine Learning, and Web
+                    Development. Proficient in Python, Data Science, and Web
+                    Technologies. I bring hands-on experience in building
+                    real-world, AI-driven solutions. I love contributing to
+                    cutting-edge innovation in the tech landscape.
                   </p>
                 </div>
               </div>
@@ -194,8 +194,8 @@ function App() {
               <p id="contact-p">GET IN TOUCH</p>
               <h2 className="section-title">Let's Work Together</h2>
               <p className="section-text">
-                Have a project in mind or want to say hello? Feel free to reach out,
-                and I'll get back to you as soon as possible.
+                Have a project in mind or want to say hello? Feel free to reach
+                out, and I'll get back to you as soon as possible.
               </p>
               <div className="contact-content">
                 <div className="contact-content">
@@ -208,7 +208,10 @@ function App() {
                       </div>
                       <div className="contact-detail-content">
                         <h4>Email</h4>
-                        <a href="mailto:shivakumarsouta18@gmail.com">
+                        <a
+                          href="mailto:shivakumarsouta18@gmail.com"
+                          class="email-link"
+                        >
                           shivakumarsouta18@gmail.com
                         </a>
                       </div>
@@ -220,7 +223,9 @@ function App() {
                       </div>
                       <div className="contact-detail-content">
                         <h4>Phone</h4>
-                        <a href="tel:+918790726965">+91 879 072 6965</a>
+                        <a href="tel:+918790726965" class="phone-link">
+                          +91 879 072 6965
+                        </a>
                       </div>
                     </div>
 
@@ -230,19 +235,35 @@ function App() {
                       </div>
                       <div className="contact-detail-content">
                         <h4>Location</h4>
-                        <p>Hyderabad, Telangana, India</p>
+                        <a
+                          href="https://www.google.com/maps?q=Hyderabad,+Telangana,+India"
+                          class="location-link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Hyderabad, Telangana, India
+                        </a>
                       </div>
                     </div>
 
                     <h3>Connect with me</h3>
                     <div className="contact-socials">
-                      <a href="https://www.linkedin.com/in/shivakumarsouta/" target="_blank">
+                      <a
+                        href="https://www.linkedin.com/in/shivakumarsouta/"
+                        target="_blank"
+                      >
                         <FaXTwitter size={25} />
                       </a>
-                      <a href="https://www.instagram.com/sivudoo/" target="_blank">
+                      <a
+                        href="https://www.instagram.com/sivudoo/"
+                        target="_blank"
+                      >
                         <FaInstagram size={25} />
                       </a>
-                      <a href="https://www.facebook.com/profile.php?id=61571819434662&rdid=1k15CAb9cJPNaa8C&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F163fycC6cD%2F#" target="_blank">
+                      <a
+                        href="https://www.facebook.com/profile.php?id=61571819434662&rdid=1k15CAb9cJPNaa8C&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F163fycC6cD%2F#"
+                        target="_blank"
+                      >
                         <FaFacebook size={25} />
                       </a>
                       <a href="https://t.me/shivakumarsouta" target="_blank">

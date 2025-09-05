@@ -480,6 +480,39 @@ body.dark {
 }
 
 /* ====== Contact Section ====== */
+
+.contact-detail-content a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Email link */
+.email-link {
+  color: #0054cb;
+}
+
+.email-link:hover {
+  color: #760985; 
+}
+
+/* Phone link */
+.phone-link {
+  color: #0054cb;
+}
+
+.phone-link:hover {
+  color: #760985; 
+}
+
+/* Location link */
+.location-link {
+  color: #0054cb;
+}
+
+.location-link:hover {
+  color: #760985; 
+}
+
 .contact-content {
   display: flex;
   gap: 2rem;
