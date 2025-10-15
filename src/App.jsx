@@ -73,12 +73,11 @@ function App() {
                 <div className="about-info">
                   <h2 className="section-title">About Me</h2>
                   <p className="section-text">
-                    I’m a B.Tech (AI & ML) student with strong expertise in
-                    Artificial Intelligence, Machine Learning, and Web
-                    Development. Proficient in Python, Data Science, and Web
-                    Technologies. I bring hands-on experience in building
-                    real-world, AI-driven solutions. I love contributing to
-                    cutting-edge innovation in the tech landscape.
+                    I’m a B.Tech (AI & ML) student passionate about applying AI
+                    & ML techniques to solve complex problems, improve business
+                    outcomes, and contribute to innovative technology solutions.
+                    I love contributing to cutting-edge innovation in the tech
+                    landscape.
                   </p>
                 </div>
               </div>
