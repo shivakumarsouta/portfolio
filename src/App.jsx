@@ -132,26 +132,80 @@ function App() {
 
         {/* Contact Section */}
         <section id="contact" className="section contact-dark">
-          <div className="container contact-wrapper">
-            <div className="contact-left">
-              <h2 className="contact-heading">Let's Connect</h2>
-              <p className="contact-description">
-                I'm actively seeking new opportunities. Whether you have a
-                question or just want to say hi, I’ll respond promptly.
-              </p>
+          <div className="container">
+            <h2 className="section-title">Contact Me</h2>
 
-              <div className="contact-socials">
-                <a href="https://github.com/" target="_blank">
-                  <FaGithub />
-                </a>
-                <a href="https://linkedin.com/" target="_blank">
-                  <FaLinkedin />
-                </a>
+            <div className="contact-wrapper">
+              {/* Left Half */}
+              <div className="contact-left">
+                <h3 className="contact-heading">Get in Touch</h3>
+                <p className="contact-caption">
+                  I`m actively seeking new opportunities. Feel free to reach out for collaborations and opportunities. I’d love to hear from you.
+                </p>
+
+                <div className="contact-info-grid">
+                  {/* Email */}
+                  <div className="contact-info-card">
+                    <span className="info-label">Email</span>
+                    <a
+                      href="mailto:shivakumarsouta18@gmail.com"
+                      className="contact-link"
+                    >
+                      shivakumarsouta18@gmail.com
+                    </a>
+                  </div>
+
+                  {/* Phone */}
+                  <div className="contact-info-card">
+                    <span className="info-label">Phone</span>
+                    <a href="tel:+918790726965" className="contact-link">
+                      +91 87907 26965
+                    </a>
+                  </div>
+
+                  {/* Location */}
+                  <div className="contact-info-card full-width">
+                    <span className="info-label">Location</span>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=Hyderabad,Telangana,India"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="contact-link"
+                    >
+                      Hyderabad, Telangana, India
+                    </a>
+                  </div>
+
+                  {/* Availability */}
+                  <div className="contact-info-card">
+                    <span className="info-label">Availability</span>
+                    <span className="info-value">
+                      Open to Internships & Full-Time
+                    </span>
+                  </div>
+
+                  {/* Response Time */}
+                  <div className="contact-info-card">
+                    <span className="info-label">Response Time</span>
+                    <span className="info-value">Within 24 hours</span>
+                  </div>
+                </div>
+
+                <div className="contact-socials">
+                  <a href="https://github.com/" target="_blank">
+                    <FaGithub />
+                  </a>
+                  <a href="https://linkedin.com/" target="_blank">
+                    <FaLinkedin />
+                  </a>
+                </div>
               </div>
-            </div>
 
-            <div className="contact-right">
-              <ContactForm />
+              {/* Right Half */}
+              <div className="contact-right">
+                <h3 className="form-heading">Fill the Form</h3>
+                <ContactForm />
+              </div>
             </div>
           </div>
         </section>
