@@ -1,15 +1,10 @@
-import StarBackground from "./components/StarBackground";
-import { ThemeProvider } from "./context/ThemeContext.jsx";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProjectCard from "./components/ProjectCard";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
-import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
-import { FaInstagram, FaFacebook, FaTelegram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function App() {
   const [projects, setProjects] = useState([]);
@@ -19,18 +14,18 @@ function App() {
   useEffect(() => {
     fetch("/data/projects.json")
       .then((res) => res.json())
-      .then((data) => setProjects(data))
-      .catch((err) => console.error("Error fetching projects:", err));
+      .then(setProjects)
+      .catch(console.error);
 
     fetch("/data/skills.json")
       .then((res) => res.json())
-      .then((data) => setSkills(data))
-      .catch((err) => console.error("Error fetching skills:", err));
+      .then(setSkills)
+      .catch(console.error);
 
     fetch("/data/blog.json")
       .then((res) => res.json())
-      .then((data) => setPosts(data))
-      .catch((err) => console.error("Error fetching blog posts:", err));
+      .then(setPosts)
+      .catch(console.error);
   }, []);
 
   const skillIcons = {
@@ -45,244 +40,125 @@ function App() {
   };
 
   return (
-    <ThemeProvider>
-      <StarBackground />
-      <div style={{ position: "relative", zIndex: 1 }}>
-        <main>
-          <Navbar />
-          <Hero />
+    <div style={{ position: "relative", zIndex: 1 }}>
+      <main>
+        <Navbar />
+        <Hero />
 
-          {/* About Section */}
-          <motion.section
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            className="section about-section"
-            id="about"
-          >
-            <div className="container">
-              <div className="about-content">
-                <motion.img
-                  src="/images/profile.jpg"
-                  alt="sk_photo"
-                  className="about-image"
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                />
-                <div className="about-info">
-                  <h2 className="section-title">About Me</h2>
-                  <p className="section-text">
-                    I’m a B.Tech (AI & ML) student passionate about applying AI
-                    & ML techniques to solve complex problems, improve business
-                    outcomes, and contribute to innovative technology solutions.
-                    I love contributing to cutting-edge innovation in the tech
-                    landscape.
-                  </p>
+        {/* About Section */}
+        <section className="section about-section" id="about">
+          <div className="container">
+            <div className="about-content">
+              <img
+                src="/images/profile.jpg"
+                alt="sk_photo"
+                className="about-image"
+              />
+              <div className="about-info">
+                <h2 className="section-title">About Me</h2>
+                <p className="section-text">
+                  I’m a B.Tech (AI & ML) student passionate about applying AI &
+                  ML techniques to solve complex problems, improve business
+                  outcomes, and contribute to innovative technology solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Skills Section */}
+        <section className="section skills-section" id="skills">
+          <div className="container">
+            <h2 className="section-title">My Skills</h2>
+            <div className="skills-grid">
+              {skills.map((skill, index) => (
+                <div key={index} className="skill-item">
+                  <i className={skillIcons[skill]}></i>
+                  <span>{skill}</span>
                 </div>
-              </div>
+              ))}
             </div>
-          </motion.section>
+          </div>
+        </section>
 
-          {/* Skills Section */}
-          <motion.section
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            className="section skills-section"
-            id="skills"
-          >
-            <div className="container">
-              <h2 className="section-title">My Skills</h2>
-              <div className="skills-grid">
-                {skills.map((skill, index) => (
-                  <motion.div
-                    key={index}
-                    className="skill-item"
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ type: "spring", stiffness: 300 }}
+        {/* Projects Section */}
+        <section className="section projects-section" id="projects">
+          <div className="container">
+            <h2 className="section-title">My Projects</h2>
+            <p className="section-text">
+              A collection of AI/ML and software development projects.
+            </p>
+            <div className="project-grid">
+              {projects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Blog Section */}
+        <section className="section blog-section" id="blog">
+          <div className="container">
+            <h2 className="section-title">My Blogs</h2>
+            <p className="section-text">
+              Visit my{" "}
+              <a
+                href="https://techtalesbyshivakumar.blogspot.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="blog-btn"
+              >
+                <strong>Blog</strong>
+              </a>
+            </p>
+            <div className="blog-grid">
+              {posts.map((post) => (
+                <div key={post.id} className="blog-post">
+                  <h3 className="blog-title">{post.title}</h3>
+                  <p className="blog-excerpt">{post.excerpt}</p>
+                  <a
+                    href={post.link}
+                    className="blog-link-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <i className={skillIcons[skill]}></i>
-                    <span>{skill}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Projects Section */}
-          <motion.section
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            className="section projects-section"
-            id="projects"
-          >
-            <div className="container">
-              <h2 className="section-title">My Projects</h2>
-              <p className="section-text">
-                A collection of AI/ML and software development projects that
-                showcase my technical skills and expertise.
-              </p>
-              <div className="project-grid">
-                {projects.map((project) => (
-                  <motion.div
-                    key={project.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: project.id * 0.1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    <ProjectCard project={project} />
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Blog Section */}
-          <motion.section
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            className="section blog-section"
-            id="blog"
-          >
-            <div className="container">
-              <h2 className="section-title">My Blogs</h2>
-              <p className="section-text">
-                Visit my{" "}
-                <a
-                  href="https://techtalesbyshivakumar.blogspot.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="section-link"
-                >
-                  Blogger site
-                </a>{" "}
-                for more posts!
-              </p>
-              <div className="blog-grid">
-                {posts.map((post) => (
-                  <div key={post.id} className="blog-post">
-                    <h3 className="blog-title">{post.title}</h3>
-                    <p className="blog-excerpt">{post.excerpt}</p>
-                    <a
-                      href={post.link}
-                      className="section-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Contact Section */}
-          <motion.section
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            className="section contact-section"
-            id="contact"
-          >
-            <div className="container">
-              <p id="contact-p">GET IN TOUCH</p>
-              <h2 className="section-title">Let's Work Together</h2>
-              <p className="section-text">
-                Have a project in mind or want to say hello? Feel free to reach
-                out, and I'll get back to you as soon as possible.
-              </p>
-              <div className="contact-content">
-                <div className="contact-content">
-                  <div className="contact-info">
-                    <h3>Contact Information</h3>
-
-                    <div className="contact-detail">
-                      <div className="contact-detail-icon">
-                        <FiMail size={25} />
-                      </div>
-                      <div className="contact-detail-content">
-                        <h4>Email</h4>
-                        <a
-                          href="mailto:shivakumarsouta18@gmail.com"
-                          class="email-link"
-                        >
-                          shivakumarsouta18@gmail.com
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="contact-detail">
-                      <div className="contact-detail-icon">
-                        <FiPhone size={25} />
-                      </div>
-                      <div className="contact-detail-content">
-                        <h4>Phone</h4>
-                        <a href="tel:+918790726965" class="phone-link">
-                          +91 879 072 6965
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="contact-detail">
-                      <div className="contact-detail-icon">
-                        <FiMapPin size={25} />
-                      </div>
-                      <div className="contact-detail-content">
-                        <h4>Location</h4>
-                        <a
-                          href="https://www.google.com/maps?q=Hyderabad,+Telangana,+India"
-                          class="location-link"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Hyderabad, Telangana, India
-                        </a>
-                      </div>
-                    </div>
-
-                    <h3>Connect with me</h3>
-                    <div className="contact-socials">
-                      <a
-                        href="https://www.linkedin.com/in/shivakumarsouta/"
-                        target="_blank"
-                      >
-                        <FaXTwitter size={25} />
-                      </a>
-                      <a
-                        href="https://www.instagram.com/sivudoo/"
-                        target="_blank"
-                      >
-                        <FaInstagram size={25} />
-                      </a>
-                      <a
-                        href="https://www.facebook.com/profile.php?id=61571819434662&rdid=1k15CAb9cJPNaa8C&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F163fycC6cD%2F#"
-                        target="_blank"
-                      >
-                        <FaFacebook size={25} />
-                      </a>
-                      <a href="https://t.me/shivakumarsouta" target="_blank">
-                        <FaTelegram size={25} />
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="contact-form-wrapper">
-                    <ContactForm />
-                  </div>
+                    Read More
+                  </a>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="section contact-dark">
+          <div className="container contact-wrapper">
+            <div className="contact-left">
+              <h2 className="contact-heading">Let's Connect</h2>
+              <p className="contact-description">
+                I'm actively seeking new opportunities. Whether you have a
+                question or just want to say hi, I’ll respond promptly.
+              </p>
+
+              <div className="contact-socials">
+                <a href="https://github.com/" target="_blank">
+                  <FaGithub />
+                </a>
+                <a href="https://linkedin.com/" target="_blank">
+                  <FaLinkedin />
+                </a>
               </div>
             </div>
-          </motion.section>
 
-          <Footer />
-        </main>
-      </div>
-    </ThemeProvider>
+            <div className="contact-right">
+              <ContactForm />
+            </div>
+          </div>
+        </section>
+
+        <Footer />
+      </main>
+    </div>
   );
 }
 

@@ -1,10 +1,4 @@
-import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
-import { Moon, Sun } from "lucide-react";
-
 function Navbar() {
-  const { theme, toggleTheme } = useContext(ThemeContext);
-
   return (
     <nav className="navbar">
       <div className="container">
@@ -39,13 +33,6 @@ function Navbar() {
             >
               Resume
             </a>
-            <button
-              onClick={toggleTheme}
-              className="theme-toggle"
-              aria-label="Toggle theme"
-            >
-              {theme === "light" ? <Moon /> : <Sun />}
-            </button>
           </div>
         </div>
       </div>

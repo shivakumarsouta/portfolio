@@ -8,10 +8,10 @@ function Footer() {
           </p>
           <div className="footer-socials">
             <a href="https://linkedin.com/in/shivakumarsouta" target="_blank" rel="noopener noreferrer" className="footer-icon">
-              <i className="fab fa-linkedin fa-2x"></i>
+              <i className="fab fa-linkedin fa-1x"></i>
             </a>
             <a href="https://github.com/shivakumarsouta" target="_blank" rel="noopener noreferrer" className="footer-icon">
-              <i className="fab fa-github fa-2x"></i>
+              <i className="fab fa-github fa-1x"></i>
             </a>
           </div>
         </div>

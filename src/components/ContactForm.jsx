@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -7,7 +8,6 @@ function ContactForm() {
     email: '',
     message: ''
   });
-  const [status, setStatus] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
@@ -17,7 +17,8 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setStatus('');
+
+    const toastId = toast.loading('Sending message...');
 
     emailjs
       .send(
@@ -30,16 +31,18 @@ function ContactForm() {
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
-      .then(
-        () => {
-          setStatus('success');
-          setFormData({ name: '', email: '', message: '' });
-        },
-        (error) => {
-          setStatus('error');
-          console.error('EmailJS error:', error.text);
-        }
-      )
+      .then(() => {
+        toast.success('Message sent successfully!', {
+          id: toastId,
+        });
+        setFormData({ name: '', email: '', message: '' });
+      })
+      .catch((error) => {
+        toast.error('Failed to send message. Please try again.', {
+          id: toastId,
+        });
+        console.error('EmailJS error:', error.text);
+      })
       .finally(() => {
         setIsSubmitting(false);
       });
@@ -47,60 +50,39 @@ function ContactForm() {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
-      <h2 className="form-heading">Send Message 💬</h2>
+      <label>Name:</label>
+      <input
+        type="text"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+        placeholder="Shiva Kumar.."
+        required
+      />
 
-      <div className="form-group">
-        <label htmlFor="name" className="form-label">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          className="form-input"
-          value={formData.name}
-          onChange={handleChange}
-          placeholder='Shiva Kumar..'
-          required
-        />
-      </div>
+      <label>Email:</label>
+      <input
+        type="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        placeholder="john.doe@example.com"
+        required
+      />
 
-      <div className="form-group">
-        <label htmlFor="email" className="form-label">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          className="form-input"
-          value={formData.email}
-          onChange={handleChange}
-          placeholder='john.doe@example.com'
-          required
-        />
-      </div>
+      <label>Message:</label>
+      <textarea
+        name="message"
+        rows="3"
+        value={formData.message}
+        onChange={handleChange}
+        placeholder="Hi, I would like to talk about.."
+        required
+      />
 
-      <div className="form-group">
-        <label htmlFor="message" className="form-label">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          className="form-textarea"
-          rows="3"
-          value={formData.message}
-          onChange={handleChange}
-          placeholder='Hi, I would like to talk about..'
-          required
-        ></textarea>
-      </div>
-
-      <button type="submit" className="form-button" disabled={isSubmitting}>
+      <button type="submit" className="contact-btn" disabled={isSubmitting}>
         {isSubmitting ? 'Sending...' : 'Send Message'}
       </button>
-
-      {status === 'success' && (
-        <p className="form-status success">✅ Message sent successfully!</p>
-      )}
-      {status === 'error' && (
-        <p className="form-status error">❌ Failed to send message. Please try again.</p>
-      )}
     </form>
   );
 }
