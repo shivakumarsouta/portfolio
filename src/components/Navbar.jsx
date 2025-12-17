@@ -1,39 +1,44 @@
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="navbar">
-      <div className="container">
-        <div className="navbar-content">
-          <a href="#about" className="navbar-brand">
-            Shiva Kumar's Portfolio
+      <div className="container navbar-content">
+        <a href="#about" className="navbar-brand">
+          Shiva Kumar
+        </a>
+
+        {/* Hamburger */}
+        <button className="nav-toggle" onClick={() => setOpen(!open)}>
+          {open ? <FaTimes /> : <FaBars />}
+        </button>
+
+        <div className={`navbar-links ${open ? "open" : ""}`}>
+          {["Home", "About", "Skills", "Projects", "Blog", "Contact"].map(
+            (item) => (
+              <a
+                key={item}
+                href={item === "Home" ? "#" : `#${item.toLowerCase()}`}
+                className="navbar-link"
+                onClick={() => setOpen(false)}
+              >
+                {item}
+              </a>
+            )
+          )}
+
+          <a
+            href="/ShivaKumarSouta_Resume.pdf"
+            className="navbar-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+          >
+            Resume
           </a>
-          <div className="navbar-links">
-            <a href="#" className="navbar-link">
-              Home
-            </a>
-            <a href="#about" className="navbar-link">
-              About
-            </a>
-            <a href="#skills" className="navbar-link">
-              Skills
-            </a>
-            <a href="#projects" className="navbar-link">
-              Projects
-            </a>
-            <a href="#blog" className="navbar-link">
-              Blog
-            </a>
-            <a href="#contact" className="navbar-link">
-              Contact
-            </a>
-            <a
-              href="/ShivaKumarSouta_Resume.pdf"
-              className="navbar-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
-          </div>
         </div>
       </div>
     </nav>

@@ -56,7 +56,7 @@ function ContactForm() {
         name="name"
         value={formData.name}
         onChange={handleChange}
-        placeholder="Shiva Kumar.."
+        placeholder="John Doe"
         required
       />
 
