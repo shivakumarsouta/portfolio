@@ -29,9 +29,10 @@ function App() {
   }, []);
 
   const skillIcons = {
-    C: "devicon-c-plain colored",
     Python: "devicon-python-plain colored",
+    SQL: "devicon-azuresqldatabase-plain colored",
     JavaScript: "devicon-javascript-plain colored",
+    Streamlit: "devicon-streamlit-plain colored",
     React: "devicon-react-original colored",
     HTML: "devicon-html5-plain colored",
     CSS: "devicon-css3-plain colored",
@@ -57,9 +58,7 @@ function App() {
               <div className="about-info">
                 <h2 className="section-title">About Me</h2>
                 <p className="section-text">
-                  I’m a B.Tech (AI & ML) student passionate about applying AI &
-                  ML techniques to solve complex problems, improve business
-                  outcomes, and contribute to innovative technology solutions.
+                  I'm a B.Tech CSE(AI & ML) graduate passionate about applying AI & ML techniques to solve complex problems, improve business outcomes, and contribute to innovative technology solutions.
                 </p>
               </div>
             </div>
@@ -140,7 +139,7 @@ function App() {
               <div className="contact-left">
                 <h3 className="contact-heading">Get in Touch</h3>
                 <p className="contact-caption">
-                  I`m actively seeking new opportunities. Feel free to reach out for collaborations and opportunities. I’d love to hear from you.
+                  I'm actively seeking new opportunities. Feel free to reach out for collaborations and opportunities. I’d love to hear from you.
                 </p>
 
                 <div className="contact-info-grid">
@@ -192,10 +191,10 @@ function App() {
                 </div>
 
                 <div className="contact-socials">
-                  <a href="https://github.com/" target="_blank">
+                  <a href="https://github.com/shivakumarsouta" target="_blank">
                     <FaGithub />
                   </a>
-                  <a href="https://linkedin.com/" target="_blank">
+                  <a href="https://linkedin.com/in/shivakumarsouta" target="_blank">
                     <FaLinkedin />
                   </a>
                 </div>

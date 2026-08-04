@@ -1,21 +1,21 @@
 [
   {
     "id": 1,
-    "title": "SmartDischarge",
-    "description": "Application developed to generate patient's discharge summaries using AI.",
-    "image": "/images/SmartDischarge.jpg",
-    "liveLink": "https://smartdischarge.onrender.com/",
-    "projectLink": "https://github.com/shivakumarsouta/SmartDischarge",
-    "techStack": ["HTML", "CSS", "JS", "Flask"]
+    "title": "MailMate",
+    "description": "AI-driven email assistant that generates email replies and enables in app mailing service.",
+    "image": "/images/MailMate.jpg",
+    "liveLink": "https://MailMate-2.streamlit.app",
+    "projectLink": "https://github.com/shivakumarsouta/MailMate-2.0",
+    "techStack": ["Python", "Streamlit", "API", "SMTP"]
   },
   {
     "id": 2,
-    "title": "CropConnect AI",
-    "description": "An application developed to help illiterate farmers to get real time market price alerts.",
-    "image": "/images/CropConnectAI.jpg",
-    "liveLink": "https://cropconnectai.onrender.com",
-    "projectLink": "https://github.com/shivakumarsouta/CropConnectAI-APP",
-    "techStack": ["HTML", "CSS", "JS", "Flask"]
+    "title": "MediBot",
+    "description": "AI-powered RAG based chatbot for medical queries based on a book knowledge.",
+    "image": "/images/medibot_bg.jpg",
+    "liveLink": "https://medibot-by-sks.streamlit.app/",
+    "projectLink": "https://github.com/shivakumarsouta/MediChat-Streamlit",
+    "techStack": ["Python", "Streamlit", "RAG"]
   },
   {
     "id": 3,
@@ -37,60 +37,15 @@
   },
   {
     "id": 5,
-    "title": "MediChat",
-    "description": "AI-powered RAG based chatbot for medical queries based on a book knowledge.",
-    "image": "/images/medibot_bg.jpg",
-    "liveLink": "https://medibot-by-sks.streamlit.app/",
-    "projectLink": "https://github.com/shivakumarsouta/MediChat-Streamlit",
-    "techStack": ["Python", "Streamlit"]
+    "title": "Student Management System",
+    "description": "Console based Java application designed to efficiently manage student records.",
+    "image": "/images/StudentManagementSystem.jpg",
+    "liveLink": "https://github.com/shivakumarsouta/Student-Management-System-Java",
+    "projectLink": "https://github.com/shivakumarsouta/Student-Management-System-Java",
+    "techStack": ["Java", "OOP"]
   },
   {
     "id": 6,
-    "title": "MediVoiceBot",
-    "description": "AI-powered chatbot for medical inquiries and assistance developed using APIs of LLMs.",
-    "image": "/images/medivoicebot_bg.jpg",
-    "liveLink": "https://huggingface.co/spaces/shivakumars57/MediVoiceBot/",
-    "projectLink": "https://github.com/shivakumarsouta/Medivoicebot",
-    "techStack": ["python", "Gradio", "Groq"]
-  },
-  {
-    "id": 7,
-    "title": "Cold Mail Generator",
-    "description": "Application developed to generate cold mails based on the job description / link provided",
-    "image": "/images/cold_mail.jpg",
-    "liveLink": "https://github.com/shivakumarsouta/ColdMailGenerator",
-    "projectLink": "https://github.com/shivakumarsouta/ColdMailGenerator",
-    "techStack": ["Python", "Streamlit", "Groq"]
-  },
-  {
-    "id": 8,
-    "title": "House Price Prediction",
-    "description": "A machine learning model to predict house prices based on various features.",
-    "image": "/images/HousePrice.jpg",
-    "liveLink": "https://houseprices-predictor.streamlit.app/",
-    "projectLink": "https://github.com/shivakumarsouta/HousePricePrediction",
-    "techStack": ["Python", "Scikit-Learn"]
-  },
-  {
-    "id": 9,
-    "title": "IPL Win Predictor",
-    "description": "ML model predicts the win percentages of IPL teams in a match using AI.",
-    "image": "/images/IplWin.jpg",
-    "liveLink": "https://ipl-win-predictor-by-sk.streamlit.app/",
-    "projectLink": "https://github.com/shivakumarsouta/IPL-Win-Predictor",
-    "techStack": ["Python", "Scikit-Learn"]
-  },
-  {
-    "id": 10,
-    "title": "Resume Generator",
-    "description": "An application to generate professional resumes based on the details provided by the user.",
-    "image": "/images/ResumeGenerator.jpg",
-    "liveLink": "https://resumegenerater.streamlit.app/",
-    "projectLink": "https://github.com/shivakumarsouta/ResumeGenerator",
-    "techStack": ["Python", "Streamlit", "Groq"]
-  },
-  {
-    "id": 11,
     "title": "Weather App (Basic)",
     "description": "Application developed to give the real time weather updates to the user of the location entered.",
     "image": "/images/WeatherAppBasic.jpg",

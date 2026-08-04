@@ -4,7 +4,7 @@ function Hero() {
             <div className="container">
                 <h1 className="hero-title">Hi, I'm Shiva Kumar Souta 👋</h1>
                 <p className="hero-subtitle">
-                    AI & ML Enthusiast | Front End Developer | B.Tech Student
+                    AI & ML Enthusiast | Front End Developer | B.Tech Graduate
                 </p>
 
                 <div className="section-buttons">

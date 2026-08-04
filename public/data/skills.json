@@ -1,10 +1,10 @@
 [ 
   "Python",
-  "C",
+  "SQL",
   "Java",
-  "React",
   "HTML",
   "CSS",
   "JavaScript",
-  "Git"
+  "Git",
+  "Streamlit"
 ]

@@ -431,10 +431,9 @@ body {
   padding: 0.85rem 1rem;
   border-radius: 6px;
   color: #e5e7eb;
-  font-size: 0.9rem;
   outline: none;
   font-family: 'VT323';
-  font-size: larger;
+  font-size: 1.1rem;
 }
 
 .contact-form input::placeholder,
@@ -518,7 +517,6 @@ body {
 }
 
 .info-value {
-  font-size: 0.95rem;
   font-weight: 500;
   font-size: 1.3rem;
 }
