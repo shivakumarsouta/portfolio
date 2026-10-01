@@ -2,55 +2,54 @@
   {
     "id": 1,
     "title": "MailMate",
-    "description": "AI-driven email assistant that generates email replies and enables in app mailing service.",
+    "description": "AI-powered email assistant that generates contextual email replies and enables users to send emails directly from the application.",
     "image": "/images/MailMate.jpg",
     "liveLink": "https://MailMate-2.streamlit.app",
     "projectLink": "https://github.com/shivakumarsouta/MailMate-2.0",
-    "techStack": ["Python", "Streamlit", "API", "SMTP"]
+    "techStack": ["AI", "Python", "Email Automation"]
   },
   {
     "id": 2,
     "title": "MediBot",
-    "description": "AI-powered RAG based chatbot for medical queries based on a book knowledge.",
+    "description": "AI-powered RAG chatbot that provides responses to medical queries using information retrieved from a curated knowledge source.",
     "image": "/images/medibot_bg.jpg",
     "liveLink": "https://medibot-by-sks.streamlit.app/",
     "projectLink": "https://github.com/shivakumarsouta/MediChat-Streamlit",
-    "techStack": ["Python", "Streamlit", "RAG"]
+    "techStack": ["AI", "RAG", "Python"]
   },
   {
     "id": 3,
     "title": "CineHeist",
-    "description": "ML model suggests movies based on the title or the plot entered by the user.",
+    "description": "Machine learning based movie recommendation system that suggests movies based on a title or plot provided by the user.",
     "image": "/images/CineHeist.jpg",
     "liveLink": "https://cineheist.streamlit.app",
     "projectLink": "https://github.com/shivakumarsouta/CineHeist",
-    "techStack": ["Python", "Streamlit","Scikit-Learn"]
+    "techStack": ["Machine Learning", "Python", "Recommendation System"]
   },
   {
     "id": 4,
-    "title": "Weather App (React)",
-    "description": "Application developed to give the real time weather updates to the user of the location entered.",
+    "title": "Weather App · React",
+    "description": "A responsive weather application that fetches real-time weather data and presents current conditions through a clean, intuitive interface.",
     "image": "/images/WeatherAppReact.jpg",
     "liveLink": "https://weatherforecasting-app.vercel.app/",
     "projectLink": "https://github.com/shivakumarsouta/WeatherAppReact",
-    "techStack": ["ReactJs"]
+    "techStack": ["React.js", "API", "JavaScript"]
   },
   {
     "id": 5,
     "title": "Student Management System",
-    "description": "Console based Java application designed to efficiently manage student records.",
+    "description": "Console-based Java application for managing student records with search, update, deletion, validation, and sorting functionality.",
     "image": "/images/StudentManagementSystem.jpg",
-    "liveLink": "https://github.com/shivakumarsouta/Student-Management-System-Java",
     "projectLink": "https://github.com/shivakumarsouta/Student-Management-System-Java",
-    "techStack": ["Java", "OOP"]
+    "techStack": ["Java", "OOP", "Collections"]
   },
   {
     "id": 6,
-    "title": "Weather App (Basic)",
-    "description": "Application developed to give the real time weather updates to the user of the location entered.",
+    "title": "Weather App · HTML/CSS/JS",
+    "description": "Responsive weather application built with vanilla web technologies that retrieves and displays weather information through an external API.",
     "image": "/images/WeatherAppBasic.jpg",
     "liveLink": "https://weatherappbysks.netlify.app",
     "projectLink": "https://github.com/shivakumarsouta/Weather",
-    "techStack": ["HTML", "CSS", "JS"]
+    "techStack": ["HTML", "CSS", "JavaScript", "API"]
   }
 ]
